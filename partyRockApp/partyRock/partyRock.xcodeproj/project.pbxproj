@@ -15,6 +15,7 @@
 		A8D6764F1E3E7BEE00CE3D66 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8D6764E1E3E7BEE00CE3D66 /* still time.ttf */; };
 		A8D676521E3E7D9B00CE3D66 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D676511E3E7D9B00CE3D66 /* VideoVC.swift */; };
 		A8D676541E3E800900CE3D66 /* PartyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D676531E3E800900CE3D66 /* PartyTableViewCell.swift */; };
+		A8D676561E3E81D100CE3D66 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D676551E3E81D100CE3D66 /* PartyRock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A8D6764E1E3E7BEE00CE3D66 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
 		A8D676511E3E7D9B00CE3D66 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		A8D676531E3E800900CE3D66 /* PartyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyTableViewCell.swift; sourceTree = "<group>"; };
+		A8D676551E3E81D100CE3D66 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D676531E3E800900CE3D66 /* PartyTableViewCell.swift */,
+				A8D676551E3E81D100CE3D66 /* PartyRock.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				A8D676521E3E7D9B00CE3D66 /* VideoVC.swift in Sources */,
 				A805E9D61E3C443D000AE216 /* MainVC.swift in Sources */,
+				A8D676561E3E81D100CE3D66 /* PartyRock.swift in Sources */,
 				A8D676541E3E800900CE3D66 /* PartyTableViewCell.swift in Sources */,
 				A805E9D41E3C443D000AE216 /* AppDelegate.swift in Sources */,
 			);
