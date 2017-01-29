@@ -12,6 +12,9 @@
 		A805E9D91E3C443D000AE216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A805E9D71E3C443D000AE216 /* Main.storyboard */; };
 		A805E9DB1E3C443D000AE216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A805E9DA1E3C443D000AE216 /* Assets.xcassets */; };
 		A805E9DE1E3C443D000AE216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A805E9DC1E3C443D000AE216 /* LaunchScreen.storyboard */; };
+		A8D6764F1E3E7BEE00CE3D66 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8D6764E1E3E7BEE00CE3D66 /* still time.ttf */; };
+		A8D676521E3E7D9B00CE3D66 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D676511E3E7D9B00CE3D66 /* VideoVC.swift */; };
+		A8D676541E3E800900CE3D66 /* PartyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D676531E3E800900CE3D66 /* PartyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		A805E9DA1E3C443D000AE216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A805E9DD1E3C443D000AE216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A805E9DF1E3C443D000AE216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8D6764E1E3E7BEE00CE3D66 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		A8D676511E3E7D9B00CE3D66 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		A8D676531E3E800900CE3D66 /* PartyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +60,13 @@
 		A805E9D21E3C443D000AE216 /* partyRock */ = {
 			isa = PBXGroup;
 			children = (
+				A8D676501E3E7C0F00CE3D66 /* files */,
 				A805E9E71E3C44CD000AE216 /* View */,
 				A805E9E61E3C44C3000AE216 /* Model */,
 				A805E9E51E3C44B7000AE216 /* Controller */,
 				A805E9D31E3C443D000AE216 /* AppDelegate.swift */,
 				A805E9D71E3C443D000AE216 /* Main.storyboard */,
 				A805E9DA1E3C443D000AE216 /* Assets.xcassets */,
-				A805E9D51E3C443D000AE216 /* MainVC.swift */,
 				A805E9DC1E3C443D000AE216 /* LaunchScreen.storyboard */,
 				A805E9DF1E3C443D000AE216 /* Info.plist */,
 			);
@@ -70,6 +76,8 @@
 		A805E9E51E3C44B7000AE216 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A8D676511E3E7D9B00CE3D66 /* VideoVC.swift */,
+				A805E9D51E3C443D000AE216 /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -77,6 +85,7 @@
 		A805E9E61E3C44C3000AE216 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8D676531E3E800900CE3D66 /* PartyTableViewCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -86,6 +95,14 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		A8D676501E3E7C0F00CE3D66 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				A8D6764E1E3E7BEE00CE3D66 /* still time.ttf */,
+			);
+			name = files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A805E9DE1E3C443D000AE216 /* LaunchScreen.storyboard in Resources */,
+				A8D6764F1E3E7BEE00CE3D66 /* still time.ttf in Resources */,
 				A805E9DB1E3C443D000AE216 /* Assets.xcassets in Resources */,
 				A805E9D91E3C443D000AE216 /* Main.storyboard in Resources */,
 			);
@@ -160,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D676521E3E7D9B00CE3D66 /* VideoVC.swift in Sources */,
 				A805E9D61E3C443D000AE216 /* MainVC.swift in Sources */,
+				A8D676541E3E800900CE3D66 /* PartyTableViewCell.swift in Sources */,
 				A805E9D41E3C443D000AE216 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +341,7 @@
 				A805E9E41E3C443D000AE216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
