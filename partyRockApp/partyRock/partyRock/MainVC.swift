@@ -26,10 +26,23 @@ class MainVC: UIViewController,UITableViewDelegate
         
         
         
-        let party1 = PartyRock(imageURL: testImageUrl, videoUrl: testVideoUrl, videoTitle: "Blank space")
-        let party2 = PartyRock(imageURL: testImageUrl, videoUrl: testVideoUrl, videoTitle: "Blank space2")
-        let party3 = PartyRock(imageURL: testImageUrl, videoUrl: testVideoUrl, videoTitle: "Blank space3")
-        let party4 = PartyRock(imageURL: testImageUrl, videoUrl: testVideoUrl, videoTitle: "Blank space4")
+        
+        let videoUrl1 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/czb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
+        
+        let videoUrl2 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/odNCtE-I8o4?list=RDczb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
+        
+        let videoUrl3 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tZzL4jI60p4?list=RDczb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
+        
+        let videoUrl4 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/kMIofEihfk4?list=RDczb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
+        
+        
+        
+        
+        
+        let party1 = PartyRock(imageURL: testImageUrl, videoUrl: videoUrl1, videoTitle: "Blank space")
+        let party2 = PartyRock(imageURL: "http://i.ytimg.com/vi/odNCtE-I8o4/1.jpg", videoUrl: videoUrl2, videoTitle: "I Knew You Were Trouble")
+        let party3 = PartyRock(imageURL: "https://i.ytimg.com/vi/tZzL4jI60p4/hqdefault.jpg", videoUrl: videoUrl3, videoTitle: "Scars")
+        let party4 = PartyRock(imageURL: "http://www.fearlessrecords.com/uploads/video-images/icon.ip4.jpg", videoUrl: videoUrl4, videoTitle: "The Enemy")
         
         
         partyRocks.append(party1)
