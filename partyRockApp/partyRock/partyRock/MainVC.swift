@@ -20,14 +20,14 @@ class MainVC: UIViewController,UITableViewDelegate
         super.viewDidLoad()
         
         
-        let testVideoUrl = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/czb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
+//        let testVideoUrl = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/czb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
         
         let testImageUrl  = "http://bookingagentinfo.com/wp-content/uploads/2015/01/I-Prevail-Contact-Information.png"
         
         
         
         
-        let videoUrl1 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/czb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
+        let videoUrl1 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/czb_CZfWko8?list=RDczb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
         
         let videoUrl2 = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/odNCtE-I8o4?list=RDczb_CZfWko8\" frameborder=\"0\" allowfullscreen></iframe>"
         
@@ -80,7 +80,32 @@ class MainVC: UIViewController,UITableViewDelegate
     }
   
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let partyRock = partyRocks[indexPath.row]
+        
+        performSegue(withIdentifier: "VideoVC", sender: partyRock)
+        
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        
+        
+        if let destination = segue.destination as? VideoVC {
+        
+            if let party  =  sender as? PartyRock{
+
+                destination.partyRock = party
+           
+            }
+            
+       
+        }
+        
+        
+    }
 
 }
 

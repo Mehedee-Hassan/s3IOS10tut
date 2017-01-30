@@ -144,14 +144,30 @@
                                     <constraint firstAttribute="height" constant="206" id="dZk-Dt-U85"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3i-Ea-fFv">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="0Ue-XI-mrl"/>
+                                    <constraint firstAttribute="height" constant="76" id="xZK-ll-hXK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93723412958115182" green="0.93723412958115182" blue="0.93723412958115182" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="r4m-v9-adI" firstAttribute="leading" secondItem="SQo-aJ-GNa" secondAttribute="leading" id="QxG-rS-heT"/>
                             <constraint firstItem="r4m-v9-adI" firstAttribute="top" secondItem="SQo-aJ-GNa" secondAttribute="top" id="V9r-0P-fMy"/>
+                            <constraint firstItem="K3i-Ea-fFv" firstAttribute="leading" secondItem="SQo-aJ-GNa" secondAttribute="leadingMargin" id="WKB-ew-8d7"/>
+                            <constraint firstItem="K3i-Ea-fFv" firstAttribute="top" secondItem="r4m-v9-adI" secondAttribute="bottom" constant="108" id="XcF-S3-8Vn"/>
                             <constraint firstAttribute="trailing" secondItem="r4m-v9-adI" secondAttribute="trailing" constant="6" id="lpo-Fk-A2j"/>
+                            <constraint firstItem="K3i-Ea-fFv" firstAttribute="trailing" secondItem="SQo-aJ-GNa" secondAttribute="trailingMargin" id="reW-6Q-Diu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="songTitle" destination="K3i-Ea-fFv" id="7M8-LU-IxV"/>
+                        <outlet property="webView" destination="r4m-v9-adI" id="MVf-Wd-UWm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hYS-iq-o6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
