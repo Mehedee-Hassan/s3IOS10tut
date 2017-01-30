@@ -21,7 +21,12 @@ class PartyTableViewCell: UITableViewCell {
     }
 
  
-    func updateUI(){
+    func updateUI(partyRock : PartyRock){
+        
+        
+        VideoTitle.text = partyRock.videoTitle
+        
+        
         
     }
     
